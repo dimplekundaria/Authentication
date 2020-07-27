@@ -1,0 +1,27 @@
+#layout-header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        background: #0040ff;
+        color: white;
+
+        .links{
+            ul{
+                margin: 5% 5px;
+                display: flex;
+
+                li{
+                    margin-right: 50px;
+                    font-size: large;
+                }
+            }
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+    }
+}

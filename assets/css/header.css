@@ -1,0 +1,15 @@
+#layout-header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  background: #0040ff;
+  color: white; }
+  #layout-header nav .links ul {
+    margin: 5% 5px;
+    display: flex; }
+    #layout-header nav .links ul li {
+      margin-right: 50px;
+      font-size: large; }
+  #layout-header nav a {
+    color: white;
+    text-decoration: none; }

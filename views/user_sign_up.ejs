@@ -1,0 +1,42 @@
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/sign.css">
+
+<h1>Sign Up</h1>
+
+<form action="/users/create" method="POST" onsubmit="return submitUserForm();">
+    <input type="text" class="form-control" id="formGroupExampleInput" name="name" placeholder="Full Name" required>
+    <input type="email" class="form-control" id="formGroupExampleInput" name="email" placeholder="Email" required>
+    <input type="password" class="form-control" id="formGroupExampleInput" name="password" placeholder="Password" required>
+    <input type="password" class="form-control" id="formGroupExampleInput" name="confirm_password" placeholder="Confirm Password" required>
+    <div class="row">
+      <div class="col-md-4"></div>
+        <div class="form-group col-md-4">
+          <div class="g-recaptcha" data-callback="verifyCaptcha" data-sitekey="6LcSr7QZAAAAAAcxIQtMbv4HC5D9sj0mYAAylCs-"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4"></div>
+        <div class="form-group col-md-4">
+          <div id="g-recaptcha-error"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="form-group col-md-4">
+        <button type="submit" class="btn btn-success">Send</button>
+      </div>
+    </div>
+</form>
+
+<hr><span>OR</span>
+<p>
+    <a href="/users/auth/google" class="google-link">Sign in with Gmail</a>
+</p>
+</div>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+async defer>
+</script>
+<script src="/js/a.js"></script>
